@@ -1,40 +1,49 @@
-import React from 'react'; 
+import React, {useState} from 'react'; 
 import styled from "styled-components";
 import { About } from "../styles";
+import Toggle from './Toggle';
+import { AnimateSharedLayout } from 'framer-motion' 
+
+
 const FaqSection = () => {
+ 
     return(
         <Faq>
-            <h2> Any questions ? <span> FAQs</span></h2>
-            <div className="question">
-                <h4> how do I start ? </h4>
-            </div>
-            <div className="answer">
-                <p> Lorem ipsum dolor sit amet.</p>
-                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, placeat!s</p>
-            </div>
-            <div className="faq-line"></div>
-                        
-            <div className="question">
-                <h4> Daily schedule</h4>
-            </div>
-            <div className="answer">
-                <p> Lorem ipsum dolor sit amet.</p>
-                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, placeat!s</p>
-            </div>
-            <div className="question">
-                <h4> Different Payment Methods </h4>
-            </div>
-            <div className="answer">
-                <p> Lorem ipsum dolor sit amet.</p>
-                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, placeat!s</p>
-            </div>
-            <div className="question">
-                <h4> What product do we offer ?  </h4>
-            </div>
-            <div className="answer">
-                <p> Lorem ipsum dolor sit amet.</p>
-                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, placeat!s</p>
-            </div>
+            <h2> 
+                Any questions ? <span> FAQs</span>
+            </h2>
+            <AnimateSharedLayout>
+
+                <Toggle title="How Do I Start ?"> 
+                        <div className="answer">
+                            <p> Lorem ipsum dolor sit amet.</p>
+                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, placeat!s</p>
+                        </div>
+                </Toggle>
+
+                <Toggle title=" Daily schedule">          
+                        <div className="answer">
+                            <p> Lorem ipsum dolor sit amet.</p>
+                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, placeat!s</p>
+                        </div>
+                </Toggle>
+
+                <Toggle title="Different Payment Methods">          
+                        <div className="answer">
+                            <p> Lorem ipsum dolor sit amet.</p>
+                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, placeat!s</p>
+                        </div>
+                </Toggle>
+
+                <Toggle title="What product do we offer ?">          
+                        <div className="answer">
+                            <p> Lorem ipsum dolor sit amet.</p>
+                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, placeat!s</p>
+                        </div>
+                </Toggle>
+                
+            </AnimateSharedLayout>
+
         </Faq>
 
     )
