@@ -64,11 +64,15 @@ img{
 }
 `
 const Awards = styled.div`
-min-height:80vh; 
-display:flex; 
-margin: 5rem 10rem; 
-align-items: center;
-justify-content:space-around; 
+    min-height:80vh; 
+    display:flex; 
+    margin: 5rem 10rem; 
+    align-items: center;
+    justify-content:space-around; 
+    @media (max-width:1300px){
+        display:block; 
+        margin:2rem 2rem;
+    }
 `; 
 
 const AwardStyle = styled.div`

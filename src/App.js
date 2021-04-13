@@ -7,7 +7,6 @@ import ContactUs from './pages/ContactUs'
 import OurWork from './pages/OurWork'; 
 import MovieDetail from './pages/MovieDetail'; 
 import {AnimatePresence} from 'framer-motion'; 
-// import ScrollTop from './components/ScrollTop'; 
 
 
 function App() {
