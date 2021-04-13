@@ -6,15 +6,18 @@ import GlobalStyle from './components/GlobalStyle';
 import ContactUs from './pages/ContactUs'
 import OurWork from './pages/OurWork'; 
 import MovieDetail from './pages/MovieDetail'; 
-//Animation
 import {AnimatePresence} from 'framer-motion'; 
+// import ScrollTop from './components/ScrollTop'; 
+
 
 function App() {
   const location = useLocation(); 
   console.log(location);
   return (
     <div className="App">
+
       <GlobalStyle />
+
       <Nav />
       <AnimatePresence exitBeforeEnter>
 
