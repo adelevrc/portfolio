@@ -1,4 +1,4 @@
-# Fakeportfolio in React 
+# Fake portfolio in React 
 
 Dependencies : 
 Styled components
